@@ -1,0 +1,29 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<style>
+    .footer{
+        bottom:inherit;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+<div class="content_head" role="contentinfo" align="center">
+    <a href="/">
+
+        <img class="content_avatar" src="{{'/assets/img/xiaoxiaoying_icon.png'}}">
+    </a>
+    <p>{{site.title}}</p>
+</div>
+<main class="content">
+    {{ content }}
+</main>
+
+{% include footer.html %}
+</body>
+</html>
+

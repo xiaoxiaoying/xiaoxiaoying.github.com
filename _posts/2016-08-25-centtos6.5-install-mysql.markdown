@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "centtos6.5 install mysqsl"
+date:   2016-08-25 09:14:18 +0800
+categories: mysql
+---
+
+### 检测系统是否自带安装MySQL
+
+`yum list install | grep mysql`<br />
+
+如果有带MySQL，则将其删除<br />
+
+### 删除系统自带的MySQL及其依懒
+
+`yum -y remove mysql-libs.x86_64`<br />
+
+然后进行安装：<br />
+
+可以参考：<a target="_blank" href="http://sharadchhetri.com/2013/12/26/install-mysql-server-5-6-in-centos-6-x-and-red-hat-6-x-linux/">http://sharadchhetri.com/2013/12/26/install-mysql-server-5-6-in-centos-6-x-and-red-hat-6-x-linux/</a>
+
+### 下载yum软件库rpm包
+
+(网址：<a target="_blank" href="http://dev.mysql.com/downloads/repo/">http://dev.mysql.com/downloads/repo/</a>)<br />
+
+`yum install wget http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm`
+
+### 安装下载的rpm包
+
+`rpm -ivh mysql-community-release-el6-5.noarch.rpm`
+
+### 使用rpm命令安装MySQL服务
+
+`yum install mysql-server`
+
+### 安装完成之后需要设置密码
+
+`mysql -u root`<br />
+<pre>
+mysql> use mysql;
+mysql> update user set password=PASSWORD("新密码") where User='root';
+mysql> flush privileges;
+mysql> quit
+</pre>
+
+### 创建数据库
+
+<code>mysql -u root -p</code>
+
+输入密码没有显示，所以一次性输正确
+
+<code>create database 数据库名</code>
+
+<code>use 数据库名</code>
+
+接下来就是创建表···

@@ -1,0 +1,248 @@
+
+@font-face {
+    font-family: 'toppan';
+    src:url('../fonts/TsukushiAMaruGothic001.ttf');
+    src: url('../fonts/TsukushiAMaruGothic001.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TsukushiAMaruGothic001.woff2') format('woff2'),
+    url('../fonts/TsukushiAMaruGothic001.woff') format('woff'),
+    url('../fonts/TsukushiAMaruGothic001.ttf') format('truetype'),
+    url('../fonts/TsukushiAMaruGothic001.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    background-color: #333;
+    color: #ddd;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'toppan',sans-serif;
+}
+*{
+    font-family: 'toppan',sans-serif;
+}
+
+img{
+    display: block;
+    margin-left: 10%;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: #fc0;
+}
+
+a:hover{
+    color: #f90;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-top: 40px;
+}
+.main-nav li a {
+    font-size: 18px;
+    text-transform: none;
+}
+.main-nav li a {
+    font-size: 18px;
+    text-transform: none;
+}
+
+.main-nav li a {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 0.5em 1em;
+    text-shadow: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.main-nav li a:hover {
+    background-color: #252525;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5),0 1px 0 rgba(255,255,255,0.1);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.1);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.main-nav li.current a {
+    background-color: #fc0;
+    color: #222;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5),0 1px 5px rgba(0,0,0,0.5);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 5px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.avatar{
+
+    float: left;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 0) and (max-width: 400px){
+    .avatar,.content_avatar{
+        width: 55px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 800px){
+    .avatar,.content_avatar{
+        width: 75px;
+    }
+    .main-nav li{
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .avatar,.content_avatar{
+        width: 10%;
+    }
+    .main-nav li{
+        margin-top: 7%;
+    }
+}
+.content_avatar{
+    margin-left:inherit;
+}
+
+.footer {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer a{
+    height: 28px;
+}
+.footer span{
+    height: 28px;
+    margin-left: 10px;
+}
+
+.pt-page {
+    width: 75%;
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.pt-page-current {
+    visibility: visible;
+    z-index: 1;
+}
+
+.moveToLeft {
+    -webkit-animation: slideOutLeft .5s ease both;
+    -moz-animation: slideOutLeft .5s ease both;
+    animation: slideOutLeft .5s ease both;
+}
+
+.moveToRight {
+    -webkit-animation: slideOutRight .5s ease both;
+    -moz-animation: slideOutRight .5s ease both;
+    animation: slideOutRight .5s ease both;
+}
+
+.fromInLeft {
+    -webkit-animation: slideInLeft .5s ease both;
+    -moz-animation: slideInLeft .5s ease both;
+    animation: slideInLeft .5s ease both;
+}
+
+.fromInRight {
+    -webkit-animation: slideInRight .5s ease both;
+    -moz-animation: slideInRight .5s ease both;
+    animation: slideInRight .5s ease both;
+}
+
+main{
+    background-color: #444;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px 10%;
+    -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+
+}
+
+.octicon-mark-github {
+    position: absolute;
+    margin-left: -24px;
+    font-size: 24px;
+    color: #ccc;
+    vertical-align: text-bottom;
+}
+
+.content{
+    padding: 10px;
+}
+.content_head{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.post-title{
+    width: 100%;
+    text-align: center;
+}
+.container{
+    text-indent: 2em;
+}
+
+.about-pre p{
+    margin: 0;
+    padding:5px 0 5px 0;
+}
+
+.highlight,code,pre{
+    text-indent: 0;
+    margin-bottom: 10px;
+    padding: 3px 15px 3px 15px;
+    overflow: auto;
+    background-color: #2b2b2b;
+    overflow-x: auto;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.5);
+    box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
+}
+
+code{
+    display: inline-block;
+    width: auto;
+}
+
+pre{
+    white-space: normal;
+}
+
+li{
+    text-indent: 0;
+}

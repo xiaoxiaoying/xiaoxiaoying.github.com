@@ -1,6 +1,61 @@
 ---
-theme :
-  name : bootstrap-3
+layout: compress
 ---
-{% include JB/setup %}
-{% include themes/bootstrap-3/default.html %}
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+
+<div class="head" align="center">
+
+    <img class="avatar" src="{{'/assets/img/xiaoxiaoying_icon.png'}}">
+    <div class="main-nav">
+        <ul>
+            <li class="li current">
+                <a >
+                    全部文章
+                </a>
+            </li>
+            <li class="li1" style="margin-left: 20px;">
+                <a >
+                    关于本人
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="center">
+    <main class="pt-page" id="all">
+
+        {% for value in site.posts %}
+        <div>
+
+        <a target="_blank"  href="{{ value.url }}" >
+            <span>{{value.title}}</span>
+            <span style="float: right;">{{value.date | date:'%Y/%m/%d'}}</span>
+        </a>
+        </div>
+        {% endfor %}
+
+        <!--<div v-for="(value,index) in list">-->
+            <!--<a target="_blank"  href="{{ value.url }}" >-->
+                <!--<span>{{value.title}}</span>-->
+                <!--<span style="text-align: right;">{{value.date}}</span>-->
+            <!--</a>-->
+        <!--</div>-->
+
+
+    </main>
+
+    <main class="pt-page" id="about">
+        {% include about.html %}
+    </main>
+
+</div>
+
+{% include footer.html %}
+</body>
+</html>
