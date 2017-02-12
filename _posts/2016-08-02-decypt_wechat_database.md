@@ -72,19 +72,22 @@ SQLiteDatabase sqliteDatabase = SQLiteDatabase.openOrCreateDatabase(file,pwd,<sp
                             };
 SQLiteDatabase sqliteDatabase = SQLiteDatabase.openOrCreateDatabase(file,pwd,<span style="color:#E28964">null</span>,hook);</code></pre>
 		这样终于可以了，那如果我想要把这个加密的<code>.db</code>文件直接转换为一般的数据库文件该咋么办？继续看<code>API</code>,其中有<span style="font-size:18px;color:#146A94">sqlcipher_export()</span>函数
-		<pre >
+		<pre ><code>
 $ ./sqlcipher encrypted.db
 sqlite> PRAGMA key = 'testkey';
 sqlite> ATTACH DATABASE 'plaintext.db' AS plaintext KEY '';  -- empty key will disable encryption
 sqlite> SELECT sqlcipher_export('plaintext');
 sqlite> DETACH DATABASE plaintext;
+</code>
 		</pre>
 		好了我们可以用这个函数导出我们想要的文件：
-		<pre style="background-color: #28323f;display: block;color: white;padding: 14px;font-size:14px;">
+		<pre  ><code>
+
 		<span style="color:#E28964">if</span>(sqliteDatabase.isOpen()){
 			sqliteDatabase.rawExeecSQL(<span style="color:#65B042" >"ATTACH DATABASE 'plaintext.db' AS plaintext KEY '';"</span>);
 			<span style="color:red">···同上···</span>
 		}
+		</code>
 		</pre>
 	</span>
 	找到导出的文件，可以使用<code>sql</code>可视化工具查看
