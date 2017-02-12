@@ -3,6 +3,7 @@ layout: post
 title:  "centtos6.5 install mysqsl"
 date:   2016-08-25 09:14:18 +0800
 categories: mysql
+tag: install mysql、修改mysql密码
 ---
 
 ### 检测系统是否自带安装MySQL

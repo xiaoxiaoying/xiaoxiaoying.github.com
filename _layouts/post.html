@@ -3,9 +3,9 @@ layout: content
 ---
 <h1 class="post-title">{{ page.title }}</h1>
 <div class="post-meta">
-  <span class="post-meta-span date">{{ page.date | date:"%Y/%m/%d" }}</span>
-  {% if page.tags.size > 0 %}
-  <span class="post-meta-span tag">{{ page.tags | join: ', ' }}</span>
+  <span class="icon-time">{{ page.date | date:"%Y/%m/%d" }}</span>
+  {% if page.tag.size > 0 %}
+  <span class="icon-tag">{{ page.tag | join: ', ' }}</span>
   {% endif %}
 </div>
 <article class="container">

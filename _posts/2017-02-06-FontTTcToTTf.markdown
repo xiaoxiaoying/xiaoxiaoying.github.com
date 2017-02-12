@@ -3,6 +3,7 @@ layout: post
 title:  "字体ttc转为ttf"
 date:   2017-02-06 14:02:18 +0800
 categories: font
+tag: font、export font、字体转换
 ---
 
 #### Mac导出字体方式

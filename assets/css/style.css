@@ -1,7 +1,17 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?majh59');
+    src: url('../fonts/icomoon.eot?majh59#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?majh59') format('truetype'),
+    url('../fonts/icomoon.woff?majh59') format('woff'),
+    url('../fonts/icomoon.svg?majh59#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'toppan';
-    src:url('../fonts/TsukushiAMaruGothic001.ttf');
+    src: url('../fonts/TsukushiAMaruGothic001.ttf');
     src: url('../fonts/TsukushiAMaruGothic001.eot?#iefix') format('embedded-opentype'),
     url('../fonts/TsukushiAMaruGothic001.woff2') format('woff2'),
     url('../fonts/TsukushiAMaruGothic001.woff') format('woff'),
@@ -17,13 +27,39 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
-    font-family: 'toppan',sans-serif;
-}
-*{
-    font-family: 'toppan',sans-serif;
+    font-family: 'toppan', sans-serif;
 }
 
-img{
+* {
+    font-family: 'toppan', sans-serif;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon', 'toppan', sans-serif !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tag:before {
+    content: "\e901  ";
+    margin-left: 2em;
+}
+
+.icon-time:before {
+    content: "\e900  ";
+    margin-left: 2em;
+}
+
+img {
     display: block;
     margin-left: 10%;
     width: 80%;
@@ -34,7 +70,7 @@ a {
     color: #fc0;
 }
 
-a:hover{
+a:hover {
     color: #f90;
 }
 
@@ -42,10 +78,12 @@ a:hover{
     display: inline-block;
     margin-top: 40px;
 }
+
 .main-nav li a {
     font-size: 18px;
     text-transform: none;
 }
+
 .main-nav li a {
     font-size: 18px;
     text-transform: none;
@@ -68,50 +106,56 @@ a:hover{
 
 .main-nav li a:hover {
     background-color: #252525;
-    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.1);
-    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5),0 1px 0 rgba(255,255,255,0.1);
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.1);
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
+
 .main-nav li.current a {
     background-color: #fc0;
     color: #222;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 5px rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5),0 1px 5px rgba(0,0,0,0.5);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 5px rgba(0,0,0,0.5);
-    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.avatar{
+.avatar {
 
     float: left;
     margin-left: 15%;
     margin-top: 20px;
 }
 
-@media screen and (min-width: 0) and (max-width: 400px){
-    .avatar,.content_avatar{
+@media screen and (min-width: 0) and (max-width: 400px) {
+    .avatar, .content_avatar {
         width: 55px;
     }
 }
-@media screen and (min-width: 400px) and (max-width: 800px){
-    .avatar,.content_avatar{
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    .avatar, .content_avatar {
         width: 75px;
     }
-    .main-nav li{
+
+    .main-nav li {
         margin-top: 50px;
     }
 }
+
 @media screen and (min-width: 800px) {
-    .avatar,.content_avatar{
+    .avatar, .content_avatar {
         width: 10%;
     }
-    .main-nav li{
+
+    .main-nav li {
         margin-top: 7%;
     }
 }
-.content_avatar{
-    margin-left:inherit;
+
+.content_avatar {
+    margin-left: inherit;
 }
 
 .footer {
@@ -122,10 +166,11 @@ a:hover{
     text-align: center;
 }
 
-.footer a{
+.footer a {
     height: 28px;
 }
-.footer span{
+
+.footer span {
     height: 28px;
     margin-left: 10px;
 }
@@ -175,16 +220,16 @@ a:hover{
     animation: slideInRight .5s ease both;
 }
 
-main{
+main {
     background-color: #444;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     padding: 20px;
     margin: 50px 10%;
-    -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     font-size: 16px;
 
 }
@@ -197,28 +242,30 @@ main{
     vertical-align: text-bottom;
 }
 
-.content{
+.content {
     padding: 10px;
 }
-.content_head{
+
+.content_head {
     width: 100%;
     margin-top: 20px;
 }
 
-.post-title{
+.post-title {
     width: 100%;
     text-align: center;
 }
-.container{
+
+.container {
     text-indent: 2em;
 }
 
-.about-pre p{
+.about-pre p {
     margin: 0;
-    padding:5px 0 5px 0;
+    padding: 5px 0 5px 0;
 }
 
-.highlight,code,pre{
+.highlight, code, pre {
     text-indent: 0;
     margin-bottom: 10px;
     padding: 3px 15px 3px 15px;
@@ -229,20 +276,33 @@ main{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    -webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.5);
-    box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.1), 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
-code{
+code {
     display: inline-block;
     width: auto;
 }
 
-pre{
+pre,.highlight {
     white-space: normal;
+    background-color: #28323f;
+    display: block;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
 }
 
-li{
+li {
     text-indent: 0;
+}
+
+pre code {
+    background-color:rgba(0, 0, 0, 0);
+    -webkit-box-shadow: none ;
+    -moz-box-shadow: none ;
+    box-shadow: none;
+    white-space: pre;
 }
