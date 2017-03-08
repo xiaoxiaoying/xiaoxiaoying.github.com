@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "android Sqlite decrypt"
+title:  "Android SQLite decrypt"
 date:   2016-08-26 11:36:18 +0800
-categories: sqlite
-tag: sqlite decrypte、微信数据库解密
+categories: SQLite
+tag: SQLite decrypt、微信数据库解密
 ---
-# sqlite decrypt tools
+# SQLite decrypt tools
 
 ##### 解密数据库文件
 1> C/C++

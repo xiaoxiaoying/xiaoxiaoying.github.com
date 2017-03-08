@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "android jni"
+title:  "Android jni"
 date:   2016-08-02 17:30:18 +0800
 categories: jni
-tag: ndk、android jni
+tag: ndk、Android jni
 ---
-# android ndk 开发
+# Android ndk 开发
 
 ### 1.准备工作
 NDK下载

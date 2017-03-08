@@ -177,9 +177,10 @@ a:hover {
 
 .pt-page {
     width: 75%;
+    height: 60%;
     position: absolute;
     visibility: hidden;
-    overflow: hidden;
+    overflow: auto;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -190,6 +191,28 @@ a:hover {
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
+
+.pt-page::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+
+.pt-page::-webkit-scrollbar-track {
+    background-color: #00000000;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+
+
+.pt-page::-webkit-scrollbar-thumb {
+    background-color: #fc0;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+}
+
 
 .pt-page-current {
     visibility: visible;
@@ -312,4 +335,8 @@ pre code {
 hr{
     margin-left: 2em;
     margin-right: 2em;
+}
+
+.main-nav li:hover{
+    cursor:pointer;
 }

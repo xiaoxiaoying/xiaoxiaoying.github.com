@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "decrypt wechat database"
+title:  "Decrypt wechat database"
 date:   2016-08-02 16:32:18 +0800
 categories: jni
 tag: 微信数据库解密、decrypt wechat database
@@ -101,8 +101,9 @@ SQLCipher开源的，翻一下他的[SQLCipher gitHub][3] <br />
 
 就到了这一步在咋么搞，一头雾水；既然这个搞不明白用<code>android ndk</code>编译呗！android studio这么强大，应该可以的。不然这什么时候才能搞定呐！要赶项目：
 
-接下来请看另外一篇[android ndk 开发][5]
-###参考
+接下来请看另外一篇[Android ndk 开发][5]
+
+### 参考
 
 [MaskRay Android微信数据导出][2]
 

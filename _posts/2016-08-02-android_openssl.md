@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "android openssl"
+title:  "Android openssl"
 date:   2016-08-02 16:32:18 +0800
 categories: jni
-tag: ndk、android jni、android openssl
+tag: ndk、Android jni、Android openssl
 ---
-# android 使用自带的openssl
+# Android 使用自带的openssl
 [原文连接][1]
 
 ### 在NDK中使用OpenSSL
