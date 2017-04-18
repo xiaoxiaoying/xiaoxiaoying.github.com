@@ -7,7 +7,8 @@ tag: pdf
 type: java
 ---
 
-#### Android PDF 阅读器
+### Android PDF 阅读器
+
 使用开源项目muPDF作为PDF底层解析
 
 1. [muPDF官网][1]
@@ -34,7 +35,11 @@ make -C libmupdf generate
 ```
 编译完之后会在generated文件夹下生成一大堆字体库之类的
 
-最后一步就是使用 `ndk-build` 进行编译
+最后一步就是使用 `ndk-build` 进行编译，编译之后.so文件有点大
+
+`try add LOCAL_CFLAGS += -DTOFU in Core.mk`
+
+可以减小到2十几M
 
 
 [1]:http://mupdf.com/

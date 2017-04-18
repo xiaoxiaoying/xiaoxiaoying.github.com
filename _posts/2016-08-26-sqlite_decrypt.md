@@ -25,7 +25,7 @@ tag: SQLite decrypt、微信数据库解密
 #define FILE_HEADER_SZ 16
 
 JNIEXPORT jint JNICALL
-Java_com_hudun_tools_jni_WeChatJNI_decrypt(JNIEnv *env, jobject instance, jstring pwd_,
+Java_com_xiaoxiaoying_tools_jni_WeChatJNI_decrypt(JNIEnv *env, jobject instance, jstring pwd_,
                                            jstring inFile_, jstring outFile_) {
     const char *pass = (*env)->GetStringUTFChars(env, pwd_, 0);
     const char *infile = (*env)->GetStringUTFChars(env, inFile_, 0);
@@ -139,7 +139,7 @@ C/C++
 #define FILE_HEADER_SZ 16
 
 JNIEXPORT jint JNICALL
-Java_com_hudun_tools_jni_WeChatJNI_decrypt(JNIEnv *env, jobject instance, jstring pwd_,
+Java_com_xiaoxiaoying_tools_jni_WeChatJNI_decrypt(JNIEnv *env, jobject instance, jstring pwd_,
                                            jstring inFile_, jstring outFile_) {
     const char *pass = (*env)->GetStringUTFChars(env, pwd_, 0);
     const char *infile = (*env)->GetStringUTFChars(env, inFile_, 0);

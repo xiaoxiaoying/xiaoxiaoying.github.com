@@ -151,8 +151,9 @@ model{<br />
 这里可能需要一个调试ndk插件，根据提示安装插件即可
 <li>在 <code>C/C++</code> 文件里打断点</li>
 <li>选择 <code>debug</code> 运行就可以调试了</li>
+
 ##### 详情
-[java_com_hudun_tools_jni_WeChatJNI_decrypt][5]
+[java_com_xiaoxiaoying_tools_jni_WeChatJNI_decrypt][5]
 
 
 
