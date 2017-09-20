@@ -4,6 +4,7 @@ title:  "Android jni"
 date:   2016-08-02 17:30:18 +0800
 categories: jni
 tag: ndk、Android jni
+type: java、c
 ---
 # Android ndk 开发
 

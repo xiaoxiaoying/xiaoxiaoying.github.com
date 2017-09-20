@@ -4,6 +4,7 @@ title:  "Android openssl"
 date:   2016-08-02 16:32:18 +0800
 categories: jni
 tag: ndk、Android jni、Android openssl
+type: Android
 ---
 # Android 使用自带的openssl
 [原文连接][1]

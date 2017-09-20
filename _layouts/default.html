@@ -13,12 +13,17 @@ layout: compress
     <div class="main-nav">
         <ul>
             <li class="li current">
-                <a >
+                <a>
                     全部文章
                 </a>
             </li>
-            <li class="li1" style="margin-left: 20px;">
-                <a >
+            <li class="li2" style="margin-left: 20px;margin-right: 20px;">
+                <a>
+                    工具
+                </a>
+            </li>
+            <li class="li1">
+                <a>
                     关于本人
                 </a>
             </li>
@@ -31,23 +36,22 @@ layout: compress
     <main class="pt-page" id="all">
 
         {% for value in site.posts %}
+        {% if value.type != tools%}
         <div>
-
-        <a target="_blank"  href="{{ value.url }}" >
-            <span>{{value.title}}</span>
-            <span style="float: right;">{{value.date | date:'%Y/%m/%d'}}</span>
-        </a>
+            <a target="_blank" href="{{ value.url }}">
+                <span>{{value.title}}</span>
+                <span style="float: right;">{{value.date | date:'%Y/%m/%d'}}</span>
+            </a>
         </div>
+        {% endif %}
         {% endfor %}
 
-        <!--<div v-for="(value,index) in list">-->
-            <!--<a target="_blank"  href="{{ value.url }}" >-->
-                <!--<span>{{value.title}}</span>-->
-                <!--<span style="text-align: right;">{{value.date}}</span>-->
-            <!--</a>-->
-        <!--</div>-->
-
-
+    </main>
+    <main class="pt-page" id="tools">
+        {% for value in site.posts %}
+        {% if value.type == tools%}
+        {% endif %}
+        {% endfor %}
     </main>
 
     <main class="pt-page" id="about">

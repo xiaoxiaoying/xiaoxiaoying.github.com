@@ -4,6 +4,7 @@ title:  "Decrypt wechat database"
 date:   2016-08-02 16:32:18 +0800
 categories: jni
 tag: 微信数据库解密、decrypt wechat database
+type: SQLite
 ---
 # 解密微信数据库
 <div >

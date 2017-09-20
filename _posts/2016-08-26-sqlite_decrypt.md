@@ -4,6 +4,7 @@ title:  "Android SQLite decrypt"
 date:   2016-08-26 11:36:18 +0800
 categories: SQLite
 tag: SQLite decrypt、微信数据库解密
+type: SQLite
 ---
 # SQLite decrypt tools
 
