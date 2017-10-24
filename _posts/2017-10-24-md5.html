@@ -1,0 +1,56 @@
+---
+layout: compress
+title:  "MD5在线加密"
+date:   2017-10-24 09:41:18 +0800
+categories: md5
+tag: md5在线加密
+type: 'tools'
+---
+
+<!DOCTYPE html>
+<html>
+{% include toolsHead.html %}
+<link rel="stylesheet" href="{{ '/assets/css/toolsStyle.css'}}"><script src="{{ '/assets/js/md5.min.js' }}"></script>
+<script src="{{ '/assets/js/jquery-3.1.1.js' }}"></script>
+<script src="{{ '/assets/js/Log.js' }}"></script>
+<script src="{{ '/assets/js/appMd5.js' }}"></script>
+<style>
+    body{
+        font-size: 1em;
+        line-height: 1.4em;
+        margin: 0 auto;
+        padding: 1em;
+        max-width: 750px;
+    }
+    textarea,input{
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0px 0px 10px;
+    }
+    .footer{
+        position: absolute;
+        max-width: 750px;
+    }
+</style>
+<body>
+<div class="content_head" role="contentinfo" align="center">
+    <a href="/">
+        <img class="content_avatar" src="{{'/assets/img/xiaoxiaoying_icon.png'}}">
+    </a>
+    <p>{{site.title}}</p>
+</div>
+
+<form>
+    <h2>输入明文</h2>
+    <textarea rows="6" id="input" style="margin-top: 0; margin-bottom: 10px; height: 111px;"></textarea>
+    <div id="calculate">生成</div>
+    <div id="reset">清空</div>
+    <h2>结果</h2>
+    <input id="result">
+</form>
+
+{% include footer.html %}
+</body>
+</html>

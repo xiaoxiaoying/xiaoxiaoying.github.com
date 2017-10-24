@@ -147,7 +147,10 @@
 
     }
     $(() => {
-        Log.logBlue("==========" + "{{site.posts.size}}");
+        Log.logBlue("size = {{site.posts.size}}");
+        // for (let i = 0;i < size;i++){
+        //     Log.logBlue(i+" type = {{site.posts.type}}");
+        // }
         let app = new App();
         app.init();
         app.initPage();

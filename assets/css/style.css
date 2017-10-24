@@ -132,52 +132,6 @@ a:hover {
     margin-top: 20px;
 }
 
-@media screen and (min-width: 0) and (max-width: 400px) {
-    .avatar, .content_avatar {
-        width: 55px;
-    }
-}
-
-@media screen and (min-width: 400px) and (max-width: 800px) {
-    .avatar, .content_avatar {
-        width: 75px;
-    }
-
-    .main-nav li {
-        margin-top: 50px;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .avatar, .content_avatar {
-        width: 10%;
-    }
-
-    .main-nav li {
-        margin-top: 7%;
-    }
-}
-
-.content_avatar {
-    margin-left: inherit;
-}
-
-.footer {
-    margin: 0;
-    width: 100%;
-    position: fixed;
-    bottom: 10px;
-    text-align: center;
-}
-
-.footer a {
-    height: 28px;
-}
-
-.footer span {
-    height: 28px;
-    margin-left: 10px;
-}
 
 .pt-page {
     width: 75%;
@@ -271,11 +225,6 @@ main {
 
 .content {
     padding: 10px;
-}
-
-.content_head {
-    width: 100%;
-    margin-top: 20px;
 }
 
 .post-title {
