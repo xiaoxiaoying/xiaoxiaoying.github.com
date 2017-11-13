@@ -1,0 +1,51 @@
+---
+layout: compress
+title:  "Base64在线编码／解码"
+date:   2017-10-24 09:41:18 +0800
+categories: base64
+tag: Base64在线编码／解码
+type: 'tools'
+---
+<!DOCTYPE html>
+<html>
+{% include toolsHead.html %}
+<link rel="stylesheet" href="{{ '/assets/css/baseStyle.css'}}">
+<script type="text/javascript" src="{{ '/assets/js/Base64.js' }}"></script>
+<style>
+    input {
+        display: inline-grid;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0 0 10px;
+    }
+</style>
+<body style="text-align: center;">
+<div class="content_head" role="contentinfo" align="center">
+    <a href="/">
+        <img class="content_avatar" src="{{'/assets/img/xiaoxiaoying_icon.png'}}">
+    </a>
+    <p>{{site.title}}</p>
+</div>
+
+<form>
+    <div>
+        <h4 style="display: inline-grid;">明文：</h4>
+        <input id="clear">
+    </div>
+    <div style="margin: 10px auto;" align="center;">
+        <div id="calculate">编码</div>
+        <span class="button icon-arrow-down"></span>
+        <div id="reset">清空</div>
+    </div>
+    <div>
+        <h4 style="display: inline-grid;">密文：</h4>
+        <input id="cipher">
+    </div>
+
+
+</form>
+
+{% include footer.html %}
+</body>
+</html>

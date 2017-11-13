@@ -87,7 +87,7 @@
         }
 
         getIds() {
-            return ['#all','#tools', '#about'];
+            return ['#tools','#all', '#about'];
         }
 
         navigate(dir, currClass, nextClass) {
@@ -147,16 +147,15 @@
 
     }
     $(() => {
-        Log.logBlue("size = {{site.posts.size}}");
         // for (let i = 0;i < size;i++){
         //     Log.logBlue(i+" type = {{site.posts.type}}");
         // }
         let app = new App();
         app.init();
         app.initPage();
-        let head1 = $('.li'),
+        let head1 = $('.li2'),
             head2 = $('.li1'),
-            head3 = $('.li2'),
+            head3 = $('.li'),
             index = 0;
         let current = head1;
         head1.on('click', function () {
@@ -164,10 +163,10 @@
             if (index !== 0) {
                 index = 0;
                 let removeCls = current;
-                let cls = $('#tools');
+                let cls = $('#all');
                 if (removeCls === head2)
                     cls = $('#about');
-                app.navigate("left", cls, $('#all'));
+                app.navigate("left", cls, $('#tools'));
                 headAddClass(this);
                 removeCls.removeClass('current');
                 current = head1;
@@ -182,10 +181,10 @@
             let cls = $('#about');
             if (current === head1){
                 orientation = 'right';
-                cls = $('#all');
+                cls = $('#tools');
             }
 
-            app.navigate(orientation, cls, $('#tools'));
+            app.navigate(orientation, cls, $('#all'));
             headAddClass(this);
             removeCls.removeClass('current');
             index = 1;
@@ -196,9 +195,9 @@
             if (index !== 2) {
                 index = 2;
                 let removeCls = current;
-                let cls = $('#tools');
+                let cls = $('#all');
                 if (removeCls === head1)
-                    cls = $('#all');
+                    cls = $('#tools');
                 app.navigate("right", cls, $('#about'));
                 headAddClass(this);
                 removeCls.removeClass('current');

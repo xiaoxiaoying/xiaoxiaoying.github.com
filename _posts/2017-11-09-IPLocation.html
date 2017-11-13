@@ -1,0 +1,56 @@
+---
+layout: compress
+title:  "根据IP地址获取地理位置"
+date:   2017-11-09 11:38:18 +0800
+categories: IPLocation
+tag: 根据IP地址获取地理位置
+type: 'tools'
+---
+
+<!DOCTYPE html>
+<html>
+{% include toolsHead.html %}
+<script type="text/javascript" src="{{ '/assets/js/IPLocation.js' }}"></script>
+<style>
+    input, textarea {
+        width: 80%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0 0 10px;
+    }
+
+    textarea {
+        width:60%;
+        margin-top: 50px;
+    }
+</style>
+<body style="text-align: center;">
+<div class="content_head" role="contentinfo" align="center">
+    <a href="/">
+        <img class="content_avatar" src="{{'/assets/img/xiaoxiaoying_icon.png'}}">
+    </a>
+    <p>{{site.title}}</p>
+</div>
+
+<form>
+    <div style="display: inline-grid;">
+        <h4 style="display: inline-grid;">本机IP</h4>
+        <h4 style="display: inline-grid;">查询的IP</h4>
+    </div>
+    <div style="display: inline-grid;width: 50%">
+
+        <input id="location">
+        <input id="ip">
+    </div>
+    <div style="margin: 10px auto;" align="center;">
+        <div id="calculate">查询</div>
+        <div id="location-ip">使用本机IP</div>
+        <div id="reset">清空</div>
+    </div>
+    <textarea id="result" style=" margin-bottom: 10px; height: 111px;" readonly="readonly"></textarea>
+
+</form>
+
+{% include footer.html %}
+</body>
+</html>

@@ -10,29 +10,19 @@ type: 'tools'
 <!DOCTYPE html>
 <html>
 {% include toolsHead.html %}
-<link rel="stylesheet" href="{{ '/assets/css/toolsStyle.css'}}"><script src="{{ '/assets/js/md5.min.js' }}"></script>
-<script src="{{ '/assets/js/jquery-3.1.1.js' }}"></script>
-<script src="{{ '/assets/js/Log.js' }}"></script>
+<script src="{{ '/assets/js/md5.min.js' }}"></script>
 <script src="{{ '/assets/js/appMd5.js' }}"></script>
 <style>
-    body{
-        font-size: 1em;
-        line-height: 1.4em;
-        margin: 0 auto;
-        padding: 1em;
-        max-width: 750px;
-    }
-    textarea,input{
+
+    textarea, input {
         display: inline-block;
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
-        margin: 0px 0px 10px;
+        margin: 0 0 10px;
     }
-    .footer{
-        position: absolute;
-        max-width: 750px;
-    }
+
+
 </style>
 <body>
 <div class="content_head" role="contentinfo" align="center">
