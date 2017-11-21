@@ -7,11 +7,12 @@ body {
 }
 
 .footer {
-    position: absolute;
     max-width: 750px;
+    position: relative;
+    top: 20px;
 }
 
-#calculate, #reset, #location-ip {
+#calculate, #reset, #location-ip, #process {
     display: inline-block;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -27,7 +28,7 @@ body {
     transition: all 0.25s;
 }
 
-#calculate:hover, #reset:hover, #location-ip:hover {
+#calculate:hover, #reset:hover, #location-ip:hover, #process:hover {
     background-color: #252525;
     color: #f90;
     cursor: pointer;
@@ -37,7 +38,7 @@ body {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-#calculate, #reset, #location-ip {
+#calculate, #reset, #location-ip, #process {
     background-color: #fc0;
     text-decoration: none;
     color: #222;

@@ -17,7 +17,7 @@ type: C
 - JPEG结尾 `0xFFD9`
 在data镜像文件中存放JPEG得所有头都是对齐得，判断是否为JPEG格式的图片：
 
-```
+```c
 bool findNewImage(void) {
     return (memcmp(bufcpy, "\xFF\xD8\xFF\xE0", 4) == 0 ||
             memcmp(bufcpy, "\xFF\xD8\xFF\xE1", 4) == 0) ? true : false;
@@ -25,7 +25,7 @@ bool findNewImage(void) {
 ```
 大概过程如下：
 
-```
+```c
 
 #define _LARGEFILE64_SOURCE
 
