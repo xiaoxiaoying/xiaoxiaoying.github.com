@@ -53,10 +53,7 @@ var Utils = {
     },
 
     isNull: function (key) {
-        if (key === undefined || key.length <= 0 || key === null) {
-            return true;
-        }
-        return false;
+        return key === undefined || key.length <= 0 || key === null
     }
 
 };

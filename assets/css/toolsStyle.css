@@ -8,8 +8,6 @@ body {
 
 .footer {
     max-width: 750px;
-    position: relative;
-    top: 20px;
 }
 
 #calculate, #reset, #location-ip, #process {

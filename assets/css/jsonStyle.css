@@ -131,7 +131,8 @@ A.OtherToolsLink {
 A.OtherToolsLink:hover {
     text-decoration: underline;
 }
-select{
+
+select {
     min-height: 28px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -143,6 +144,7 @@ select{
     padding: 4px;
     color: #555555;
 }
+
 a {
     text-decoration: none;
     color: #fc0;
