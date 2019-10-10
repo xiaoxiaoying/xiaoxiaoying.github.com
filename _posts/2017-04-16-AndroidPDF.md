@@ -24,7 +24,7 @@ type: java
 
 编译环境搭建好之后下载 `muPDF源码` 
 
-之后更新muPDF使用的第三发库
+之后更新muPDF使用的第三方库
 ```
 git submodule update --init
 ```
